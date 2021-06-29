@@ -1,7 +1,7 @@
 package server
 
 type Unit struct {
-	ID string
+	ID string	`"gorm:primaryKey"`
 	Description string
 }
 
