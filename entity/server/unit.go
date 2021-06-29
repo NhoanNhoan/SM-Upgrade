@@ -1,7 +1,7 @@
 package server
 
 type Unit struct {
-	ID string	`"gorm:primaryKey"`
+	ID          string `"gorm:primaryKey"`
 	Description string
 }
 
@@ -11,3 +11,12 @@ type RackUnit = Unit
 type PortType = Unit
 type WorkingState = Unit
 type ActiveState = Unit
+
+// Hardware
+type PSU = Unit
+type Chassis = Unit
+type CPU = Unit
+type Disk = Unit
+type NIC = Unit
+type RAID = Unit
+type RAM = Unit
