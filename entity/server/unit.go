@@ -20,3 +20,4 @@ type Disk = Unit
 type NIC = Unit
 type RAID = Unit
 type RAM = Unit
+type Management = Unit
