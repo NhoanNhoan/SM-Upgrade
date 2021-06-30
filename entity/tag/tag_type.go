@@ -1,6 +1,6 @@
 package tag
 
 type TagType struct {
-	Id string
+	Id string `gorm:"primaryKey"`
 	Des string
 }
