@@ -5,10 +5,8 @@ type Server struct {
 	SerialNumber string
 	DC	`gorm:"foreignKey:ID;references:ID"`
 	Rack `gorm:"foreignKey:ID;references:ID"`
-	//UStartId string
-	//UStart RackUnit `gorm:"foreignKey:UStartId;references:ID"`
-	//UEndId string
-	//UEnd   RackUnit `gorm:"foreignKey:UEndId;references:ID"`
+	UStart RackUnit `gorm:"foreignKey:ID;references:ID"`
+	UEnd   RackUnit `gorm:"foreignKey:ID;references:ID"`
 	WorkingState `gorm:"foreignKey:ID;references:ID"`
 	ActiveState `gorm:"foreignKey:ID;references:ID"`
 }
